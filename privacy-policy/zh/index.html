@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SafeBox应用和网站如何处理信息。">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://msafebox.com/privacy-policy/zh/">
+  <title>隐私政策 | SafeBox</title>
+  <style>
+:root {
+  --bg: #f4f8fa;
+  --surface: #ffffff;
+  --text: #142d3a;
+  --muted: #4f6672;
+  --primary: #286789;
+  --primary-dark: #1f526e;
+  --outline: #c5d5dd;
+  --notice: #e8f3f8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
+    "Noto Sans", "Noto Sans SC", sans-serif;
+  line-height: 1.7;
+}
+.site-header {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: #fff;
+}
+.header-inner, main, .footer-inner {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+}
+.header-inner { padding: 34px 0 30px; }
+.brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+h1 {
+  margin: 18px 0 6px;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  line-height: 1.12;
+}
+.subtitle { margin: 0; color: rgba(255,255,255,.84); }
+.top-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+.top-links a {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid rgba(255,255,255,.55);
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+}
+main { padding: 28px 0 48px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--outline);
+  border-radius: 18px;
+  padding: clamp(20px, 4vw, 36px);
+  box-shadow: 0 10px 30px rgba(20,45,58,.06);
+}
+.notice {
+  background: var(--notice);
+  border-left: 4px solid var(--primary);
+  border-radius: 10px;
+  padding: 14px 16px;
+  color: var(--text);
+}
+h2 {
+  margin: 34px 0 10px;
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
+h3 { margin: 22px 0 8px; font-size: 1.08rem; }
+p, li { color: var(--text); }
+.muted { color: var(--muted); }
+a { color: var(--primary); }
+ul { padding-left: 1.3rem; }
+li + li { margin-top: 7px; }
+.table-wrap { overflow-x: auto; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+th, td {
+  border: 1px solid var(--outline);
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: #edf5f8; }
+footer {
+  border-top: 1px solid var(--outline);
+  background: #fff;
+}
+.footer-inner {
+  padding: 24px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+}
+.footer-links { display: flex; flex-wrap: wrap; gap: 14px; }
+@media (max-width: 560px) {
+  .header-inner { padding-top: 26px; }
+  .card { border-radius: 14px; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/">SafeBox</a>
+    <h1>隐私政策</h1>
+    <p class="subtitle">SafeBox应用和网站如何处理信息。</p>
+    <nav class="top-links" aria-label="Legal page navigation">
+      <a href="/">Home</a>
+      <a href="/privacy-policy/">English</a>
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <article class="card">
+
+    <p class="muted"><strong>生效日期：</strong>2026年7月13日</p>
+    <div class="notice">
+      SafeBox（保密盒）采用“本地优先”设计。保险库内容通常以加密形式保存在您的设备上。云盘备份、邮件、广告和购买等可选功能会涉及下文列出的第三方服务。
+    </div>
+
+    <h2>1. 适用范围</h2>
+    <p>本隐私政策说明SafeBox Android应用以及<strong>msafebox.com</strong>网站如何处理信息。“SafeBox”“我们”指运营该应用和网站的独立开发者。</p>
+
+    <h2>2. SafeBox应用处理的信息</h2>
+    <h3>2.1 保存在设备上的保险库内容</h3>
+    <p>SafeBox可能保存您主动添加的账户资料、密码、备注、证件图片、语音附件和个人照片。这些内容保存在应用私有存储中，并受到应用加密和访问控制机制保护。</p>
+    <p>我们不运营一个会接收您保险库可读明文副本的集中式SafeBox服务器。</p>
+
+    <h3>2.2 安全与恢复信息</h3>
+    <p>应用可能在本地保存安全设置、加密密钥包装记录、恢复码验证数据、备份元数据和操作日志。SafeBox的设计目标是不以明文保存主密码、恢复码或加密密钥。您有责任妥善保管主密码和恢复码。</p>
+
+    <h3>2.3 相机、照片和麦克风</h3>
+    <p>在获得授权后，SafeBox会在您主动拍摄、录音或导入内容时使用相机、照片存储或麦克风。如果您启用了闯入提醒功能，应用可能在达到设定的错误解锁条件后拍摄照片，并按照您选择的设置处理。</p>
+
+    <h3>2.4 Google Drive备份</h3>
+    <p>连接Google Drive时，SafeBox只申请受限的<code>drive.file</code>权限。该权限允许应用创建和管理由SafeBox创建或由您明确授权SafeBox访问的文件。SafeBox上传加密备份对象，以及定位、校验和恢复这些备份所必需的非内容元数据。</p>
+    <p>SafeBox可能在设备上保留有限的账户展示信息，例如脱敏邮箱、显示名称、连接状态及应用创建的备份文件夹标识。访问令牌应为短期令牌，SafeBox不会将其作为永久凭据保存。</p>
+    <p>SafeBox对从Google API获得的信息的使用和传输，将遵守Google API Services User Data Policy及其Limited Use要求。</p>
+
+    <h3>2.5 Dropbox备份</h3>
+    <p>连接Dropbox时，SafeBox访问用于SafeBox备份的应用区域或文件。加密备份对象及管理它们所需的元数据会传输至Dropbox。Dropbox依据其自身条款和隐私政策处理这些信息。</p>
+
+    <h3>2.6 邮件和SMTP功能</h3>
+    <p>如果您配置邮件提醒或恢复功能，SafeBox会使用您提供的邮件服务器设置和凭据发送邮件。根据您的设置，邮件可能包含闯入照片或恢复相关信息。邮件服务商依据其自身政策处理邮件和连接数据。</p>
+
+    <h3>2.7 购买与广告</h3>
+    <p>Google Play处理购买、订阅、交易状态及相关账户信息。启用广告时，Google Mobile Ads或已披露的其他广告服务商可能依据其政策和您的设备同意设置处理设备信息、广告标识符、IP地址、由IP推断的大致位置、广告互动和诊断数据。</p>
+
+    <h2>3. 网站信息</h2>
+    <p>SafeBox网站使用GitHub Pages托管。托管服务商可能为了安全和运行处理IP地址、浏览器类型、访问页面和访问时间等标准请求信息。网站可能使用Google Analytics和Google广告服务，并可能通过Cookie或类似技术统计使用情况、投放或衡量广告。</p>
+
+    <h2>4. 信息用途</h2>
+    <ul>
+      <li>提供本地加密存储、搜索、显示、备份、恢复和换机传输功能。</li>
+      <li>认证可选云盘连接并执行您请求的操作。</li>
+      <li>在您启用并配置后发送提醒或恢复邮件。</li>
+      <li>处理购买、判断功能权益、防止滥用和维护安全。</li>
+      <li>使用非敏感技术信息诊断故障并提高稳定性。</li>
+      <li>运营、保护并了解公共网站的使用情况。</li>
+    </ul>
+
+    <h2>5. 共享与披露</h2>
+    <p>我们不出售您的保险库内容或Google用户数据。仅在提供您请求的功能、遵守法律、保护用户与服务，或与按照自身政策运行的服务商合作所必需时共享信息。相关服务商可能包括Google Play、Google Drive、Dropbox、邮件服务商、GitHub Pages、分析服务商和广告服务商。</p>
+
+    <h2>6. 保存和删除</h2>
+    <ul>
+      <li><strong>本地应用数据：</strong>保留在您的设备上，直到您删除、重置应用或卸载应用。卸载通常会删除应用私有本地数据。</li>
+      <li><strong>云端备份：</strong>保留在您的Google Drive或Dropbox中，直到您删除或服务商移除。仅断开SafeBox与云盘的连接不会自动删除远端备份，除非应用明确说明并获得您的确认。</li>
+      <li><strong>邮件：</strong>按照您的邮件服务商和收件人的设置及政策保存。</li>
+      <li><strong>网站和广告数据：</strong>按照相关服务商的政策和设置保存。</li>
+    </ul>
+    <p>您可以在SafeBox中删除本地项目，也可以在相关云盘或SafeBox提供的删除功能中删除云端备份。您可以在Google账户权限页面撤销Google授权，并在Dropbox已连接应用设置中撤销Dropbox授权。</p>
+
+    <h2>7. 安全</h2>
+    <p>SafeBox采用旨在保护本地内容和加密备份的技术措施，但任何软件、设备、网络或存储服务都不能保证绝对安全。您应保持设备更新，使用可靠主密码，妥善保管恢复码，并在适当情况下保留独立备份。</p>
+
+    <h2>8. 您的选择和权利</h2>
+    <p>您可以选择是否授予相机、麦克风、通知、附近设备、Google Drive、Dropbox等可选权限，并可在Android或相关服务商处撤销授权。根据适用法律，您可能有权访问、更正、删除、限制或反对我们控制的个人信息处理。大多数保险库内容由您直接在设备上控制。</p>
+
+    <h2>9. 未成年人</h2>
+    <p>SafeBox不面向未达到所在国家数字服务同意年龄的儿童。我们不会通过集中式SafeBox账户服务故意收集儿童个人信息。</p>
+
+    <h2>10. 跨境处理</h2>
+    <p>第三方服务商可能在您所在国家以外处理信息，其处理受自身法律条款、隐私政策和跨境保护机制约束。</p>
+
+    <h2>11. 政策更新</h2>
+    <p>当应用、网站、法律或第三方集成发生变化时，我们可能更新本政策，页面顶部会显示修订日期。如Google用户数据的用途发生重大变化，我们会在需要时于新用途生效前进行披露。</p>
+
+    <h2>12. 联系方式</h2>
+    <p>隐私问题或请求请发送至<a href="mailto:qingjun.pan@gmail.com">qingjun.pan@gmail.com</a>。</p>
+
+  </article>
+</main>
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 SafeBox</span>
+    <nav class="footer-links">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+      <a href="mailto:qingjun.pan@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
