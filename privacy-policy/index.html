@@ -138,7 +138,7 @@ footer {
 <main>
   <article class="card">
 
-    <p class="muted"><strong>Effective date:</strong> July 13, 2026</p>
+    <p class="muted"><strong>Effective date:</strong> August 25, 2026</p>
     <div class="notice">
       SafeBox is designed as a local-first privacy application. Your vault content is normally stored on your device in encrypted form. Optional cloud backup, email, advertising, and purchase features involve the third-party services described below.
     </div>
@@ -154,8 +154,10 @@ footer {
     <h3>2.2 Security and recovery information</h3>
     <p>The app may store local security settings, encrypted key-wrapping records, recovery-code verification data, backup metadata, and operation journals. SafeBox is designed not to store your master PIN, recovery code, or encryption keys in plaintext. You are responsible for keeping your PIN and recovery code secure.</p>
 
-    <h3>2.3 Camera, photos, and microphone</h3>
-    <p>With your permission, SafeBox may use the camera, photo storage, or microphone when you actively capture or import content. If you enable the intrusion-alert feature, the app may capture a photo after configured failed-unlock conditions. Intrusion captures are handled according to the settings you choose.</p>
+    <h3>2.3 Camera, photos, microphone, and Intruder Alert location</h3>
+    <p>With your permission, SafeBox may use the camera, photo storage, or microphone when you actively capture or import content. If you enable the Intruder Alert feature, the app may capture a photo after configured failed-unlock conditions.</p>
+    <p>If you separately choose to enable location reporting for Intruder Alert, SafeBox may obtain the device’s approximate or precise current location once for that security event. Depending on the information available from the device and operating system, the alert may include latitude and longitude, location accuracy, an address, and a map link. The location is used only to provide Intruder Alert functionality and for fraud prevention and security. SafeBox does not use this feature for continuous location tracking and does not maintain a location history.</p>
+    <p>When location reporting is enabled, the location information may be included in an Intruder Alert email sent to the recipient email address that you configure. Location reporting is optional. You can leave it disabled or revoke location permission; in that case, Intruder Alert can operate without including device location.</p>
 
     <h3>2.4 Google Drive backup</h3>
     <p>If you connect Google Drive, SafeBox requests the limited <code>drive.file</code> permission. This permission allows the app to create and manage files that SafeBox creates or that you explicitly make available to SafeBox. SafeBox uploads encrypted backup objects and related non-content metadata needed to locate, verify, and restore those backups.</p>
@@ -166,7 +168,8 @@ footer {
     <p>If you connect Dropbox, SafeBox accesses the application area or files used for SafeBox backups. Encrypted backup objects and the metadata required to manage them are transferred to Dropbox. Dropbox processes this information under its own terms and privacy policy.</p>
 
     <h3>2.6 Email and SMTP features</h3>
-    <p>If you configure email-based alerts or recovery features, SafeBox uses the email server settings and credentials that you provide to send messages. Depending on your settings, a message may include an intrusion photo or recovery-related information. Your email provider processes those messages and connection data under its own policies.</p>
+    <p>If you configure email-based features, SafeBox uses the email server settings and credentials that you provide to send test messages, security alerts, recovery-related messages, or other email features that you enable. Depending on your settings, an Intruder Alert email may include an intrusion photo, approximate or precise location information, an address, a map link, and information related to the security event.</p>
+    <p>Beginning with SafeBox 2.0.5 (version code 88), SafeBox does not permit plaintext SMTP for connections that it establishes directly. SMTP connections use SSL/TLS or STARTTLS that is required to upgrade successfully to TLS. If a secure connection cannot be established, SafeBox does not fall back to plaintext transmission. This protects data in transit between SafeBox and the mail server you configure. After a message reaches an email service, that provider and the recipient mailbox process, retain, and delete the message under their own settings and privacy policies.</p>
 
     <h3>2.7 Purchases and advertising</h3>
     <p>Google Play processes purchases, subscriptions, transaction status, and related account information. If advertising is enabled, Google Mobile Ads or other disclosed advertising providers may process device information, advertising identifiers, IP address, approximate location derived from IP, ad interactions, and diagnostic data according to their own policies and your device consent settings.</p>
@@ -178,7 +181,7 @@ footer {
     <ul>
       <li>To provide local encrypted storage, search, display, backup, restore, and device-transfer functions.</li>
       <li>To authenticate optional cloud connections and perform actions you request.</li>
-      <li>To send alerts or recovery messages when you enable and configure those features.</li>
+      <li>To send test messages, alerts, or recovery messages when you enable and configure those features, including optional Intruder Alert location reporting.</li>
       <li>To process purchases, enforce feature entitlements, prevent abuse, and maintain security.</li>
       <li>To diagnose failures and improve reliability using non-sensitive technical information.</li>
       <li>To operate, secure, and understand use of the public website.</li>
@@ -186,21 +189,24 @@ footer {
 
     <h2>5. Sharing and disclosure</h2>
     <p>We do not sell your vault content or Google user data. Information is shared only as necessary to provide a feature you request, comply with law, protect users and the service, or work with service providers acting under their own policies. Relevant providers may include Google Play, Google Drive, Dropbox, email providers, GitHub Pages, analytics providers, and advertising providers.</p>
+    <p>If you enable Intruder Alert location reporting, SafeBox shares the alert information needed to deliver that feature with the email service that you configure. This may include an intrusion photo and approximate or precise location information. SafeBox does not send Intruder Alert location data to a centralized SafeBox developer server for storage.</p>
 
     <h2>6. Retention and deletion</h2>
     <ul>
       <li><strong>Local app data:</strong> remains on your device until you delete it, reset the app, or uninstall the app. Uninstalling normally deletes the app’s private local data.</li>
       <li><strong>Cloud backups:</strong> remain in your Google Drive or Dropbox until you delete them or the provider removes them. Disconnecting a provider from SafeBox does not automatically delete remote backups unless the app clearly says otherwise and you confirm.</li>
+      <li><strong>Intruder Alert location:</strong> SafeBox does not retain a location history or a developer-server copy after the alert is processed. If location is included in an alert email, that email may remain in the configured email service or recipient mailbox until it is deleted there.</li>
       <li><strong>Email messages:</strong> are retained according to the settings and policies of your email provider and recipient.</li>
       <li><strong>Website and advertising data:</strong> are retained according to the applicable provider’s policy and settings.</li>
     </ul>
     <p>You can delete local vault items from within SafeBox. You can delete cloud backups from the relevant provider or through an available SafeBox deletion function. You may revoke Google access from your Google Account permissions page and Dropbox access from your Dropbox connected-app settings.</p>
 
     <h2>7. Security</h2>
-    <p>SafeBox uses technical safeguards intended to protect local content and encrypted backups. No software, device, network, or storage provider can be guaranteed to be completely secure. You should keep your device updated, use a strong PIN, protect your recovery code, and maintain independent backups where appropriate.</p>
+    <p>SafeBox uses technical safeguards intended to protect local content and encrypted backups. Beginning with SafeBox 2.0.5 (version code 88), SMTP connections established directly by SafeBox do not permit plaintext SMTP: SafeBox uses SSL/TLS or requires STARTTLS to upgrade successfully to TLS, and it does not continue by falling back to plaintext if secure negotiation fails. This transport protection covers the connection between SafeBox and the mail server you configure; subsequent email routing and storage are controlled by the applicable email providers.</p>
+    <p>No software, device, network, or storage provider can be guaranteed to be completely secure. You should keep your device updated, use a strong PIN, protect your recovery code, and maintain independent backups where appropriate.</p>
 
     <h2>8. Your choices and rights</h2>
-    <p>You can choose whether to grant camera, microphone, notification, nearby-device, Google Drive, Dropbox, and other optional permissions. You may withdraw permissions through Android or the relevant provider. Depending on applicable law, you may have rights to access, correct, delete, restrict, or object to processing of personal information that we control. Most vault content is controlled directly by you on your device.</p>
+    <p>You can choose whether to grant camera, microphone, location, notification, nearby-device, Google Drive, Dropbox, and other optional permissions. Intruder Alert location reporting is optional and can be disabled; you may also revoke location permission through Android. You may withdraw other permissions through Android or the relevant provider. Depending on applicable law, you may have rights to access, correct, delete, restrict, or object to processing of personal information that we control. Most vault content is controlled directly by you on your device.</p>
 
     <h2>9. Children</h2>
     <p>SafeBox is not directed to children under the minimum age required to consent to digital services in their country. We do not knowingly collect children’s personal information through a centralized SafeBox account service.</p>
